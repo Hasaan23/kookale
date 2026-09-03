@@ -1,0 +1,237 @@
+* { box-sizing: border-box;}
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    width: 90%;
+    margin:0 outo;
+    line-height: 2.0;
+    text-align: justify;;
+    font-family: verdana,arial,helvetica;
+
+}
+
+
+@media only screen and (min-width:600px) {
+
+  header {
+
+margin:15px outo;
+display: flex;
+align-items: center;
+
+
+}
+
+.LOGO {
+  background: mediumaquamarine;
+  width:150;
+ padding:1rem;
+ 
+}
+
+.LOGO__image {
+    width:100%;
+    height:150px;
+    object-fit: cover;
+    object-position: top left;
+    
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 4;
+    color: lightgreen;
+    margin-left: 30px;
+
+}
+
+
+
+h1:hover {
+
+    font-size: 3.2em;
+    line-height: 4.2em;
+    color: tomato;
+
+}
+
+nav {
+    height: 70px;
+    background-color: teal;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    margin: 10px 0 20px 0;
+
+}
+
+nav:hover {
+    height: 75px;
+    background-color:yellow;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    margin: 10px 0 20px 0;
+
+}
+
+
+nav ul {
+
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+}
+
+nav ul li {
+
+    margin: 10px 25px;
+
+}
+
+nav ul li a {
+
+    background-color: lightgreen;
+    height: 45px; 
+    padding: 5px 35px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+nav ul li a:hover {
+
+    background-color: white;
+    height: 50px; 
+    padding: 5px 35px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+#SECTIPON1 {grid-area:part1;}
+#SECTIPON2 {grid-area:part2;}
+#SECTIPON3 {grid-area:part3;}
+#SECTIPON4 {grid-area:part4;}
+#SECTIPON5 {grid-area:part5;}
+#SECTIPON6 {grid-area:part6;}
+#SECTIPON7 {grid-area:part7;}
+#SECTIPON8 {grid-area:part8;}
+#SECTIPON9 {grid-area:part9;}
+#SECTIPON10 {grid-area:part10;}
+
+
+
+
+  main {
+    display: grid;
+    background-image: url("watch.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: 30px;
+
+    grid-template-areas: 
+    'part1 part1 part2 part 3'
+    'part1 part1 part4 part 5'
+    'part6 part7 part10 part10'
+    'part8 part9 part10 part10';
+    grid-gap: 20px;
+ 
+}
+
+
+
+/*this is parallax part */
+
+
+.parallax {
+    /* The image used */
+    background-image: url("Parallax\ images/parallax light three img3.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ }
+
+ body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url("Parallax\ images/parallax light three img3.jpg");
+  
+    /* Full height */
+    height: 20%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+
+    @media only screen and (max-device-width: 1366px) {
+        .parallax {
+          background-attachment: scroll;
+        }
+      }
+
+
+/*finished parallax part */
+  }
+.item1 {
+  position: absolute;
+  top: 500px;
+  right: 0px;
+}
+
+
+
+
+.TEXTBOX {
+
+    background-color: #0000ff67;
+padding: 10px;
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+
+
+}
+
+.picright1 {
+  float: right;
+  margin-left: 20px;
+
+}
+
+.videocenter  {
+  float: right;
+  margin-top: 335px;
+  position: absolute;
+  left: 445px;
+
+}
+
+
+.PICBOX {
+background-color: #f5F5F5;
+padding: 10px;
+
+border-radius: 200px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+
+}
